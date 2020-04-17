@@ -51,6 +51,7 @@
 				{url:"/", title:"我的首页"},
 				{url:"/note", title:"我的笔记"},
 				{url:"/login", title:"登录"},
+				{url:"/blog", title:"博客"},
 				],
 				currentIndex:0
 

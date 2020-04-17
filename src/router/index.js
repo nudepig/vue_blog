@@ -24,6 +24,11 @@ export default new Router({
       path: '/login',
       name: 'Vlogin',
       component: Vlogin
+    },
+    {
+      path: '/blog',
+      name: 'Vblog',
+      component: Vblog
     }
   ]
 })
