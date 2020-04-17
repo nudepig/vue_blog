@@ -20,7 +20,7 @@ new Vue({
   store,
   components: { App },
   template: '<App/>'
-})
+});
 
 router.beforeEach(function (to, from, next) {
   if(to.meta.requireAuth){
@@ -33,4 +33,4 @@ router.beforeEach(function (to, from, next) {
   }else{
     next()
   }
-})
+});

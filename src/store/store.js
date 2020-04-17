@@ -13,7 +13,8 @@ export default new Vuex.Store({
       course: 'http://127.0.0.1:8003/api/v1/course/',
       courseDetail: 'http://127.0.0.1:8003/api/v1/course/',
       login: 'http://127.0.0.1:8003/api/v1/login/',
-      micro: 'http://127.0.0.1:8003/api/v1/micro/'
+      micro: 'http://127.0.0.1:8003/api/v1/micro/',
+      blog: 'http://127.0.0.1:8003/api/v1/blog/'
     }
   },
   mutations: {

@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import Vmain from '@/components/Vmain'
 import Vnote from '@/components/Vnote'
 import Vlogin from '@/components/Vlogin'
+import Vblog from '@/components/Vblog'
 
 
 Vue.use(Router);
@@ -28,7 +29,11 @@ export default new Router({
     {
       path: '/blog',
       name: 'Vblog',
-      component: Vblog
-    }
-  ]
+      component: Vblog,
+      meta:{
+        requireAuth:true
+      }
+    },
+  ],
+  mode:'history'
 })
