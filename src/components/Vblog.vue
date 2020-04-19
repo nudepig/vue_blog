@@ -1,6 +1,6 @@
 <template>
 	<div class="note">
-		<h1>展示页面:{{title}}</h1>
+		<h1>展示页面 {{title}} </h1>
 	</div>
 </template>
 
@@ -9,7 +9,7 @@
     name: "Vblog",
     data() {
       return {
-        error:null
+        title:null
       }
     },
     mounted(){
@@ -23,11 +23,18 @@
           method:'GET',
           params:{
             token:this.$store.state.token
+          },
+          headers:{
+            'Content-Type':'application/json',
           }
-        }).then(function (arg) {
-          if(arg.data.code === 1000){
-            that.title = arg.data.error
+        }).then(function(ret){
+
+            if(ret.data.code === 1000){
+            console.log(ret.data.error)
+            that.title = ret.data.error
           }
+
+
         })
 
       }

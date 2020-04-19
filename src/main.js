@@ -28,7 +28,7 @@ router.beforeEach(function (to, from, next) {
     if (store.state.token) {
       next()
     } else {
-      next({name: 'login',query: {backUrl: to.fullPath}})
+      next({path: '/login',query: {backUrl: to.fullPath}})  // 未登录则跳转到登陆界面，query:{ backUrl: to.fullPath}表示把当前路由信息传递过去方便登录后跳转回来；
     }
   }else{
     next()
