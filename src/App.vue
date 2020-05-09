@@ -8,6 +8,7 @@
 <script>
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'element-ui/lib/theme-chalk/index.css';
 import Vheader from './components/Vheader'
 export default {
   name: 'App',
